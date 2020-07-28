@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "project_number": "716856690801",
+    "firebase_url": "https://aruba-b1b33.firebaseio.com",
+    "project_id": "aruba-b1b33",
+    "storage_bucket": "aruba-b1b33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716856690801:android:a70a68c20d7c72ae",
+        "android_client_info": {
+          "package_name": "py.com.aruba.clientes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716856690801-d2q7uevn3eqdeqpm39obhgqrfj07m2lv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLcEaFT1iVw4doHeAufyERSAbH_70J4Eo"
+        },
+        {
+          "current_key": "AIzaSyDJ5evziFhcmFH2d4czre6fI0AZm1muK60"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716856690801-d2q7uevn3eqdeqpm39obhgqrfj07m2lv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

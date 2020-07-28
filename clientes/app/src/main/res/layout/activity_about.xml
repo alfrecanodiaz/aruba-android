@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.about.AboutActivity">
+
+        <!--AppBar-->
+        <include layout="@layout/appbar_merge" />
+        <!--end appbar-->
+
+        <RelativeLayout
+            android:layout_below="@+id/app_bar_content"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/rlContentSubHeader"
+            android:background="@color/aquamarineBackground">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:textSize="14dp"
+                android:text="ACERCA DE"/>
+        </RelativeLayout>
+
+
+        <!--Contenido-->
+       <ScrollView
+           android:layout_below="@+id/rlContentSubHeader"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:layout_margin="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <!--Title-->
+               <RelativeLayout
+                   android:id="@+id/rlTerminos"
+                   android:layout_width="match_parent"
+                   android:layout_height="35dp">
+                   <View
+                       android:layout_width="3dp"
+                       android:layout_height="match_parent"
+                       android:background="@color/aquamarineDark"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:layout_marginLeft="15dp"
+                       android:textSize="18dp"
+                       android:textColor="@color/black200"
+                       android:textStyle="bold"
+                       android:text="Términos de Uso"
+                       android:layout_marginStart="15dp" />
+               </RelativeLayout>
+               <!--Content-->
+               <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                   android:id="@+id/expandableTerminos"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:ael_expanded="false"
+                   app:ael_duration="200"
+                   app:ael_interpolator="decelerate"
+                   app:ael_orientation="vertical">
+                   <TextView
+                       android:id="@+id/tvTerminosUso"
+                       android:padding="5dp"
+                       android:textColor="@color/black100"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+               </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+               <!--Separador-->
+
+               <!--Title-->
+               <RelativeLayout
+                   android:id="@+id/rlPoliticas"
+                   android:layout_marginTop="15dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="35dp">
+                   <View
+                       android:layout_width="3dp"
+                       android:layout_height="match_parent"
+                       android:background="@color/aquamarineDark"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:layout_marginLeft="15dp"
+                       android:textSize="18dp"
+                       android:textColor="@color/black200"
+                       android:textStyle="bold"
+                       android:text="Políticas de Privacidad"
+                       android:layout_marginStart="15dp" />
+               </RelativeLayout>
+               <!--Content-->
+               <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                   android:id="@+id/expandablePoliticas"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:ael_expanded="false"
+                   app:ael_duration="200"
+                   app:ael_interpolator="decelerate"
+                   app:ael_orientation="vertical">
+                   <TextView
+                       android:id="@+id/tvPoliticas"
+                       android:padding="5dp"
+                       android:textColor="@color/black100"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+               </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+               <!--Separador-->
+
+               <!--Title-->
+               <RelativeLayout
+                   android:id="@+id/rlFaq"
+                   android:layout_marginTop="15dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="35dp">
+                   <View
+                       android:layout_width="3dp"
+                       android:layout_height="match_parent"
+                       android:background="@color/aquamarineDark"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:layout_marginLeft="15dp"
+                       android:textSize="18dp"
+                       android:textColor="@color/black200"
+                       android:textStyle="bold"
+                       android:text="Preguntas Frecuentes"
+                       android:layout_marginStart="15dp" />
+               </RelativeLayout>
+               <!--Content-->
+               <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                   android:id="@+id/expandableFaq"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:ael_expanded="false"
+                   app:ael_duration="200"
+                   app:ael_interpolator="decelerate"
+                   app:ael_orientation="vertical">
+                   <TextView
+                       android:id="@+id/tvPreguntas"
+                       android:padding="5dp"
+                       android:textColor="@color/black100"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+               </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+               <!--Separador-->
+           </LinearLayout>
+       </ScrollView>
+    </RelativeLayout>
+</layout>

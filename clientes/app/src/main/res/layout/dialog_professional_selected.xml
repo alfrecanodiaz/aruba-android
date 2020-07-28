@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp"
+    android:layout_gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="1dp"
+        app:cardCornerRadius="10dp">
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:transitionName="rlHeader"
+            android:background="@color/gray300"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <TextView
+                android:id="@+id/tvProfessionalName"
+                android:transitionName="tvProfessionalName"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="100dp"
+            android:src="@drawable/avatar"
+            android:transitionName="avatar"
+            android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                android:id="@+id/llContentDetails"
+                android:layout_below="@id/ivAvatar"
+                android:transitionName="llContentDetails"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+            <!--Columna-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:text="LIKES"
+                    android:textSize="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:srcCompat="@drawable/like" />
+
+                <TextView
+                    android:id="@+id/tvLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="125"
+                    android:textColor="@color/black100" />
+            </LinearLayout>
+
+            <!--Columna-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:text="SERVICIOS"
+                    android:textSize="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:srcCompat="@drawable/icon_services" />
+
+                <TextView
+                    android:id="@+id/tvServices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="125"
+                    android:textColor="@color/black100" />
+            </LinearLayout>
+
+            <!--Columna-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:text="COMENTARIOS"
+                    android:textSize="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:srcCompat="@drawable/icon_comment" />
+
+                <TextView
+                    android:id="@+id/tvComments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="125"
+                    android:textColor="@color/black100" />
+            </LinearLayout>
+
+            <!--Columna-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:text="PROMEDIO"
+                    android:textSize="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:srcCompat="@drawable/icon_start_on" />
+
+                <TextView
+                    android:id="@+id/tvAverage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="125"
+                    android:textColor="@color/black100" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/llContentDetails"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content" >
+
+            <!--Detalles-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_empty"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:text="El día"
+                    android:textColor="@color/black100"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:text="martes 12|02|2019"
+                    android:textColor="@color/black100"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvHour"
+                    android:text="a las 08:00Hs."
+                    android:textColor="@color/black100"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnReject"
+                android:text="CAMBIAR DE PROFESIONAL"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                style="@style/button_brown"/>
+
+            <Button
+                android:id="@+id/btnContinue"
+                android:text="SELECCIONAR PROFESIONAL"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                style="@style/button_aqua"/>
+        </LinearLayout>
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

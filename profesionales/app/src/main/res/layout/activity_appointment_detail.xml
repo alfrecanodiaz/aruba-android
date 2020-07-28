@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activityBackground"
+    tools:context=".ui.appointment.AppointmentDetailsActivity">
+
+    <include layout="@layout/appbar_merge" />
+
+    <!--Body-->
+
+    <RelativeLayout
+        android:layout_below="@+id/app_bar_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/aquamarineBackground"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <!--Detalles-->
+        <RelativeLayout
+            android:id="@+id/llContentHeader"
+            android:layout_below="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tvClient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Cliente: Nathalia González"
+                    android:textColor="@color/black200" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Fecha: Martes 12/02/2019"
+                    android:textColor="@color/black200" />
+
+                <TextView
+                    android:id="@+id/tvHour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Hora: 08:00 a.m."
+                    android:textColor="@color/black200" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Tiempo estimado: 95 minutos"
+                    android:textColor="@color/black200" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="match_parent"
+                        android:textAlignment="center"
+                        android:layout_toLeftOf="@+id/ivGmaps"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_centerVertical="true"
+                        android:text="Dirección: Andrade 320 (botón google maps)"
+                        android:textColor="@color/black200" />
+                    <ImageView
+                        android:id="@+id/ivGmaps"
+                        android:src="@drawable/icon_gpams"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+                </RelativeLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/lineBlack" />
+
+                <TextView
+                    android:id="@+id/tvPaymentMethod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Método de pago: Efectivo"
+                    android:textColor="@color/black200" />
+
+                <TextView
+                    android:id="@+id/tvTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Total: 35.000Gs (llevar cambio de 100.000Gs.)"
+                    android:textColor="@color/black200" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--Avatar-->
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="4dp"
+            android:elevation="4dp"
+            android:src="@drawable/avatar" />
+
+        <!--Detalles-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/llContentHeader"
+            android:layout_above="@+id/llContentButtons"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/aquamarineBackground"
+                android:padding="5dp"
+                android:text="Detalles del servicio solicitado"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+
+            <!--Detalles-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <!--Contenedor de botones-->
+        <LinearLayout
+            android:id="@+id/llContentButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btnArrived"
+                style="@style/button_aqua"
+                android:layout_width="260dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btnSendMessage"
+                style="@style/button_brown"
+                android:layout_width="260dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:text="MENSAJE AL CLIENTE" />
+
+            <Button
+                android:id="@+id/btnCancelAppointment"
+                style="@style/button_silver"
+                android:layout_width="260dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

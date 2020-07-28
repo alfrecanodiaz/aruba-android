@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.main.MainActivity">
+
+        <!--AppBar-->
+        <RelativeLayout
+            android:id="@+id/app_bar_content"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:fitsSystemWindows="false"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                app:elevation="0dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.appcompat.widget.Toolbar
+                            android:id="@+id/toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="#00000000"
+                            app:popupTheme="@style/AppTheme.AppBarOverlay">
+                            <ImageView
+                                android:id="@+id/ivLogoToolbar"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/logo_superior" />
+                        </androidx.appcompat.widget.Toolbar>
+                    </RelativeLayout>
+                </FrameLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+        </RelativeLayout>
+
+        <!--Contenido-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar_content">
+
+            <!--Header-->
+            <LinearLayout
+                android:id="@+id/llContentHeader"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:id="@+id/llContentProfileName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/etGreeting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="¡BUENOS DÍAS!"
+                            android:textSize="14dp" />
+                        <TextView
+                            android:id="@+id/etFirstName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="MÓNICA"
+                            android:textAlignment="center"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                        <Button
+                            android:id="@+id/btnProfile"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/button_silver"
+                            android:foreground="?android:selectableItemBackground"
+                            android:text="VER PERFIL"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/ivProfile"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/avatar"
+                        android:transitionName="profile" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--Contenido Botones-->
+            <LinearLayout
+                android:layout_below="@+id/llContentHeader"
+                android:weightSum="6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--appointment-->
+                <LinearLayout
+                    android:id="@+id/llSchedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/appointment"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/rounded_icon_transparent">
+
+                        <ImageView
+                            android:id="@+id/iconSchedule"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/icon_schedule"
+                            android:transitionName="icon" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvSchedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="MI AGENDA"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:transitionName="title" />
+                </LinearLayout>
+
+                <!--scores-->
+                <LinearLayout
+                    android:id="@+id/llScores"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/scores"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/rounded_icon_transparent">
+
+                        <ImageView
+                            android:id="@+id/iconScores"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/icon_scores"
+                            android:transitionName="icon" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvScores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="MI PUNTUACIÓN"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:transitionName="title" />
+                </LinearLayout>
+
+                <!--goals-->
+                <LinearLayout
+                    android:id="@+id/llRanking"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/goals"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/rounded_icon_transparent">
+
+                        <ImageView
+                            android:id="@+id/iconGoals"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/icon_goals"
+                            android:transitionName="icon" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvGoals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="RANKING"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:transitionName="title" />
+                </LinearLayout>
+
+                <!--balance-->
+                <LinearLayout
+                    android:id="@+id/llBalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/balance"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/rounded_icon_transparent">
+
+                        <ImageView
+                            android:id="@+id/iconBalance"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/icon_balance"
+                            android:transitionName="icon" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="MI BALANCE"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:transitionName="title" />
+                </LinearLayout>
+
+                <!--availability-->
+                <LinearLayout
+                    android:id="@+id/llAvailability"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/availability"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/rounded_icon_transparent">
+
+                        <ImageView
+                            android:id="@+id/iconAvailability"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/icon_availability"
+                            android:transitionName="icon" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvAvailability"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="MI DISPONIBILIDAD"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:transitionName="title" />
+                </LinearLayout>
+
+                <!--close session-->
+                <LinearLayout
+                    android:id="@+id/llClose"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/close"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/rounded_icon_transparent">
+
+                        <ImageView
+                            android:id="@+id/iconClose"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/icon_close"
+                            android:transitionName="icon" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="CERRAR SESIÓN"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <!--end appbar-->
+
+    </RelativeLayout>
+</layout>

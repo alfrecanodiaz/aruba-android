@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="false"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="#00000000"
+                    app:popupTheme="@style/AppTheme.AppBarOverlay">
+                    <ImageView
+                        android:id="@+id/ivLogoToolbar"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/logo_superior" />
+                </androidx.appcompat.widget.Toolbar>
+
+                <!--icon-->
+                <RelativeLayout
+                    android:id="@+id/rlBackButton"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="15dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/back_button" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".ui.professionals.RankingListActivity">-->
+
+<!--    &lt;!&ndash;AppBar&ndash;&gt;-->
+<!--    <include layout="@layout/appbar_merge" />-->
+<!--    &lt;!&ndash;end appbar&ndash;&gt;-->
+
+<!--    &lt;!&ndash;Body&ndash;&gt;-->
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/app_bar_content">-->
+
+<!--        &lt;!&ndash;Header&ndash;&gt;-->
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/llContentHeader"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:background="@color/white">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:background="@color/aquamarine" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_above="@+id/rlContentAvatar"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:text="¡Hola Nathalia!"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="18dp" />-->
+
+<!--            &lt;!&ndash;avatar&ndash;&gt;-->
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/rlContentAvatar"-->
+<!--                android:layout_width="120dp"-->
+<!--                android:layout_height="120dp"-->
+<!--                android:layout_centerInParent="true">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:src="@drawable/avatar" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="25dp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:src="@drawable/profile_icon_change" />-->
+<!--            </RelativeLayout>-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/ivIconAddress"-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:src="@drawable/ic_android_alert" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:text="PROFESIONALES"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_toEndOf="@+id/ivIconAddress"-->
+<!--                    android:layout_toRightOf="@+id/ivIconAddress" />-->
+
+<!--                <View-->
+<!--                    android:id="@+id/viewSeparator1"-->
+<!--                    android:layout_below="@+id/ivIconAddress"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:background="@color/lineBlack"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_below="@id/viewSeparator1"-->
+<!--                    android:text="Los últimos contactados"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerHorizontal="true"/>-->
+<!--            </RelativeLayout>-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/recyclerView"-->
+<!--            android:layout_below="@id/llContentHeader"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"/>-->
+<!--    </RelativeLayout>-->
+<!--</RelativeLayout>-->

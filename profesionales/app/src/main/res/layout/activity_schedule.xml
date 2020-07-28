@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".ui.appointment.AppointmentsActivity"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            layout="@layout/appbar_subtitle_merge"
+            app:icon="@{@drawable/icon_schedule}"
+            app:title='@{"MI AGENDA"}' />
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:layout_below="@+id/app_bar_content"
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:mcv_monthLabels="@color/aquamarine"
+            app:mcv_allowClickDaysOutsideCurrentMonth="false"
+            app:mcv_showOtherDates="all"
+            app:mcv_selectionColor="#80CCCCCC"
+            />
+
+    </RelativeLayout>
+</layout>

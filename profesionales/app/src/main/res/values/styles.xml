@@ -1,0 +1,98 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">@font/myfont</item>
+    </style>
+
+    <!--Transparent-->
+    <style name="TransparentTheme">
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!--Splash the right way-->
+    <!--<style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">-->
+    <!--<item name="android:windowBackground">@drawable/splash_background</item>-->
+    <!--</style>-->
+
+    <!--fullscreen-->
+    <style name="AppTheme.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--Buttons-->
+
+    <style name="button_aqua" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">#00000000</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:background">@drawable/button_aqua</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="button_brown" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">#00000000</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:background">@drawable/button_brown</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="button_silver" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">#00000000</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:background">@drawable/button_silver</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="button_fb" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">#00000000</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:background">@drawable/button_fb</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <!--Animaciones-->
+    <style name="dialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+
+    <!--Loading-->
+    <style name="FullScreenDialogStyle" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- This is important! Don't forget to set window background -->
+        <item name="android:windowBackground">@color/blackTransparent80</item>
+    </style>
+
+</resources>

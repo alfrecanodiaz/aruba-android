@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.historical.HistoricalAppointmentDetailsActivity">
+
+    <include layout="@layout/appbar_merge" />
+
+    <!--Body-->
+
+    <RelativeLayout
+        android:layout_below="@+id/app_bar_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!--Cabecera-->
+        <RelativeLayout
+            android:id="@+id/llContentHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvProfessional"
+                    android:textColor="@color/black100"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:textColor="@color/black100"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvHour"
+                    android:textColor="@color/black100"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:textColor="@color/black100"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:textColor="@color/black100"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/lineBlack"/>
+                <TextView
+                    android:id="@+id/tvPaymentMethod"
+                    android:textColor="@color/black100"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvTotal"
+                    android:textColor="@color/black100"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--Avatar-->
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="4dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/avatar"
+            android:layout_alignParentRight="true" />
+
+        <!--Detalles-->
+        <LinearLayout
+            android:id="@+id/llContentDetails"
+            android:layout_below="@+id/llContentHeader"
+            android:layout_above="@+id/llContentButtons"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Detalles del servicio solicitado"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/aquamarineBackground"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--Detalles-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <!--Contenedor de botones-->
+        <LinearLayout
+            android:id="@+id/llContentButtons"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnReview"
+                android:text="CALIFICAR PROFESIONAL"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:visibility="invisible"
+                android:layout_gravity="center_horizontal"
+                android:textSize="11dp"
+                style="@style/button_aqua"/>
+            <Button
+                android:id="@+id/btnCancel"
+                android:text="CANCELAR RESERVA"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="11dp"
+                style="@style/button_brown"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content" >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardUseCompatPadding="true"
+            android:layout_margin="5dp"
+            app:cardElevation="1dp"
+            app:cardCornerRadius="10dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/aquamarineBackground">
+                    <TextView
+                        android:textSize="18dp"
+                        android:textColor="@color/white"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancelar Cita"/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tvProfessional"
+                    android:textAlignment="center"
+                    android:text="Fatima González"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+                    <ImageView
+                        android:id="@+id/ivAvatar"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/avatar"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="12dp"
+                    android:textColor="#90333333"
+                    android:text="Motivo para cancelar el servicio"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lineBlack"/>
+
+                <RelativeLayout
+                    android:background="#EEEEEE"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+                    <EditText
+                        android:id="@+id/etText"
+                        android:background="#00000000"
+                        android:padding="5dp"
+                        android:gravity="top"
+                        android:imeOptions="actionDone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:text="CANCELAR EL SERVICIO"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/brown1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_close_popup"
+            android:elevation="5dp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

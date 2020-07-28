@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/app_bar_content"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="false"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="#00000000"
+                        app:popupTheme="@style/AppTheme.AppBarOverlay">
+                        <ImageView
+                            android:id="@+id/ivLogoToolbar"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/logo_superior" />
+                    </androidx.appcompat.widget.Toolbar>
+
+                    <!--icon-->
+                    <RelativeLayout
+                        android:id="@+id/rlBackButton"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="15dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/back_button" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </FrameLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+</merge>

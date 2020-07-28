@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/activityBackground">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--AppBar-->
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/app_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/colorPrimary"
+                    android:fitsSystemWindows="false"
+                    android:theme="@style/AppTheme.AppBarOverlay"
+                    app:elevation="0dp">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="120dp"
+                                android:transitionName="logo"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                app:srcCompat="@drawable/logo_superior" />
+                        </RelativeLayout>
+                        <androidx.appcompat.widget.Toolbar
+                            android:id="@+id/toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="@android:color/transparent"
+                            app:popupTheme="@style/AppTheme.PopupOverlay" />
+                    </FrameLayout>
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <!--Body-->
+                <include layout="@layout/content_main" />
+
+            </RelativeLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="false"
+            app:itemBackground="@drawable/drawer_item_background_selector"
+            app:itemIconTint="#95333333"
+            app:itemTextColor="#95333333"
+            app:headerLayout="@layout/nav_header_dashboard"
+            app:menu="@menu/activity_dashboard_drawer" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

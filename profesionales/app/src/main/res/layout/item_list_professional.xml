@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?><!--peluqueria-->
+<!--fila-->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/llItem"
+	android:orientation="vertical"
+	android:clickable="true"
+	android:focusable="true"
+	android:foreground="?android:attr/selectableItemBackground">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="90dp">
+
+		<RelativeLayout
+			android:id="@+id/rlContentNumber"
+			android:layout_centerVertical="true"
+			android:layout_marginStart="15dp"
+			android:background="@drawable/professional_pos_square"
+			android:layout_width="25dp"
+			android:layout_height="25dp">
+			<TextView
+				android:id="@+id/tvPos"
+				android:layout_centerInParent="true"
+				android:textColor="@color/white"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		</RelativeLayout>
+		<ImageView
+			android:id="@+id/ivAvatar"
+			android:src="@drawable/avatar"
+			android:layout_toEndOf="@+id/rlContentNumber"
+			android:layout_centerVertical="true"
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginStart="10dp" />
+
+		<LinearLayout
+			android:layout_toRightOf="@+id/ivAvatar"
+			android:layout_toLeftOf="@id/finalisimo"
+			android:layout_margin="15dp"
+			android:orientation="vertical"
+			android:layout_centerVertical="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView
+				android:id="@+id/tvName"
+				android:transitionName="tvName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<androidx.appcompat.widget.AppCompatRatingBar
+				android:id="@+id/ratingBar"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:progressTint="@color/yellow"
+				android:secondaryProgressTint="@color/yellow"
+				android:progressBackgroundTint="@color/brown2"
+				style="?android:attr/ratingBarStyleSmall"
+				android:isIndicator="true"
+				android:numStars="5"
+				android:stepSize="1.0"
+				android:rating="5" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/finalisimo"
+			android:layout_margin="15dp"
+			android:orientation="horizontal"
+			android:layout_alignParentEnd="true"
+			android:layout_centerVertical="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true">
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_margin="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<ImageView
+					app:srcCompat="@drawable/icon_services"
+					android:layout_width="25dp"
+					android:layout_height="25dp" />
+				<TextView
+					android:id="@+id/tvServices"
+					android:text="45"
+					android:textSize="11dp"
+					android:textAlignment="center"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_margin="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<ImageView
+					android:id="@+id/ivLike"
+					app:srcCompat="@drawable/icon_like"
+					android:layout_width="25dp"
+					android:layout_height="25dp" />
+				<TextView
+					android:id="@+id/tvLikes"
+					android:text="85"
+					android:textSize="11dp"
+					android:textAlignment="center"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+		</LinearLayout>
+	</RelativeLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:background="#20000000" />
+</LinearLayout>
+

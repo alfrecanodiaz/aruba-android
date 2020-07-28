@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/item"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:padding="15dp"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+
+	<!--Cabecera-->
+	<RelativeLayout
+		android:id="@+id/rlContentTitle"
+		android:layout_width="match_parent"
+		android:layout_height="22dp">
+		<TextView
+			android:id="@+id/tvTitle"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:text="Reserva para Nathalia Ríos"
+			android:textSize="14dp" />
+		<ImageView
+			android:id="@+id/ivDelete"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:layout_centerVertical="true"
+			android:layout_alignParentEnd="true"
+			android:src="@drawable/ic_delete_forever"
+			android:tint="@color/black100"
+			android:visibility="gone"
+			android:layout_alignParentRight="true" />
+	</RelativeLayout>
+
+	<!--Separador-->
+	<View
+		android:id="@+id/viewSeparator"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginBottom="2dp"
+		android:layout_below="@+id/rlContentTitle"
+		android:background="@color/lineBlack" />
+
+<!--	<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+<!--		android:id="@+id/expandableLayout"-->
+<!--		android:layout_below="@+id/viewSeparator"-->
+<!--		android:layout_width="match_parent"-->
+<!--		android:layout_height="wrap_content"-->
+<!--		app:ael_expanded="true"-->
+<!--		app:ael_duration="200"-->
+<!--		app:ael_interpolator="decelerate"-->
+<!--		app:ael_orientation="vertical">-->
+
+		<!--Detalles-->
+		<LinearLayout
+			android:id="@+id/llContentDetails"
+			android:layout_below="@+id/viewSeparator"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<!--Dirección-->
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="70dp"
+				android:layout_marginBottom="5dp"
+				android:background="@drawable/input_edittext">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="70dp"
+					android:layout_marginRight="40dp"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/tvTypeAddress"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:text="MI CASA"
+						android:textSize="16dp"
+						android:transitionName="title" />
+
+					<TextView
+						android:id="@+id/tvAddress"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Andrade 230"
+						android:textColor="@color/whiteSoft"
+						android:textSize="12dp" />
+				</LinearLayout>
+
+				<ImageView
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:adjustViewBounds="true"
+					app:srcCompat="@drawable/icon_address"/>
+
+<!--				<ImageView-->
+<!--					android:id="@+id/ivEditAddress"-->
+<!--					android:layout_width="25dp"-->
+<!--					android:layout_height="25dp"-->
+<!--					android:layout_centerVertical="true"-->
+<!--					android:layout_alignParentEnd="true"-->
+<!--					android:layout_alignParentRight="true"-->
+<!--					android:adjustViewBounds="true"-->
+<!--					android:src="@drawable/ic_edit"-->
+<!--					android:tint="@color/brown2"-->
+<!--					android:layout_marginRight="10dp"-->
+<!--					android:layout_marginEnd="10dp" />-->
+			</RelativeLayout>
+
+			<!--Servicios-->
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="70dp"
+				android:layout_marginBottom="5dp"
+				android:background="@drawable/input_edittext">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="70dp"
+					android:layout_marginRight="40dp"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/tvCategory"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:text="PELUQUERÍA"
+						android:textSize="16dp"
+						android:transitionName="title" />
+
+					<TextView
+						android:id="@+id/tvSubService"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Lavado Natural - Corte"
+						android:textColor="@color/whiteSoft"
+						android:textSize="12dp" />
+				</LinearLayout>
+
+				<ImageView
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:adjustViewBounds="true"
+					app:srcCompat="@drawable/icon_service_cart"/>
+
+				<ImageView
+					android:id="@+id/ivEditService"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:layout_centerVertical="true"
+					android:layout_alignParentEnd="true"
+					android:layout_alignParentRight="true"
+					android:adjustViewBounds="true"
+					android:src="@drawable/ic_edit"
+					android:tint="@color/brown2"
+					android:visibility="gone"
+					android:layout_marginRight="10dp"
+					android:layout_marginEnd="10dp" />
+			</RelativeLayout>
+
+			<!--Profesional-->
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="70dp"
+				android:layout_marginBottom="5dp"
+				android:background="@drawable/input_edittext">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="70dp"
+					android:layout_marginRight="40dp"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/tvProfessional"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:textSize="16dp"/>
+
+					<TextView
+						android:id="@+id/tvDate"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Miércoles 04 a  las 08:00 hs."
+						android:textColor="@color/whiteSoft"
+						android:textSize="12dp" />
+				</LinearLayout>
+
+				<ImageView
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:adjustViewBounds="true"
+					app:srcCompat="@drawable/icon_calendar"/>
+
+				<ImageView
+					android:id="@+id/ivEditProfessional"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:layout_centerVertical="true"
+					android:layout_alignParentEnd="true"
+					android:layout_alignParentRight="true"
+					android:adjustViewBounds="true"
+					android:src="@drawable/ic_edit"
+					android:tint="@color/brown2"
+					android:visibility="gone"
+					android:layout_marginRight="10dp"
+					android:layout_marginEnd="10dp" />
+			</RelativeLayout>
+		</LinearLayout>
+<!--	</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+</RelativeLayout>

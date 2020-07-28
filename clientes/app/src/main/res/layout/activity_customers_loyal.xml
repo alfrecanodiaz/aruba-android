@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".ui.customer.LoyalCustomerActivity">
+
+	<!--AppBar-->
+	<include layout="@layout/appbar_merge" />
+	<!--end appbar-->
+
+	<!--Body-->
+	<RelativeLayout
+		android:layout_below="@+id/app_bar_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<!--Header-->
+		<RelativeLayout
+			android:id="@+id/rlContentHeader"
+			android:layout_width="match_parent"
+			android:layout_height="180dp"
+			android:background="@color/white">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:background="@color/aquamarineBackground" />
+
+			<TextView
+				android:id="@+id/tvUsername"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_above="@+id/rlContentAvatar"
+				android:layout_centerHorizontal="true"
+				android:layout_marginBottom="5dp"
+				android:layout_marginTop="5dp"
+				android:textColor="@color/white"
+				android:textSize="18dp" />
+
+			<!--avatar-->
+			<RelativeLayout
+				android:id="@+id/rlContentAvatar"
+				android:layout_width="120dp"
+				android:layout_height="120dp"
+				android:layout_centerInParent="true">
+
+				<ImageView
+					android:id="@+id/ivAvatar"
+					android:layout_width="100dp"
+					android:layout_height="100dp"
+					android:layout_centerInParent="true"
+					android:src="@drawable/avatar" />
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:layout_alignParentBottom="true"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/tvTitle"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="SERVICIOS DISPONIBLES"
+					android:padding="5dp"
+					android:textAlignment="center"
+					android:textSize="14dp" />
+
+				<View
+					android:id="@+id/viewSeparator"
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_marginLeft="15dp"
+					android:layout_marginRight="15dp"
+					android:layout_marginBottom="5dp"
+					android:layout_below="@+id/tvTitle"
+					android:background="@color/lineBlack" />
+			</RelativeLayout>
+		</RelativeLayout>
+
+		<!--Contenido-->
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/recyclerView"
+			android:layout_below="@id/rlContentHeader"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+
+	</RelativeLayout>
+</RelativeLayout>

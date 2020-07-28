@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/screen"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+
+	<RelativeLayout
+		android:layout_centerVertical="true"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<RelativeLayout
+			android:id="@+id/rlContentAnimation"
+			android:layout_centerHorizontal="true"
+			android:layout_width="160dp"
+			android:layout_height="160dp">
+			<ImageView
+				android:id="@+id/ivBgCircle"
+				android:layout_width="135dp"
+				android:layout_height="135dp"
+				android:layout_centerInParent="true"
+				app:srcCompat="@drawable/loading_border"/>
+			<!--			<ImageView-->
+			<!--				android:id="@+id/ivBgCircle"-->
+			<!--				android:layout_width="135dp"-->
+			<!--				android:layout_height="135dp"-->
+			<!--				android:layout_centerInParent="true"-->
+			<!--				android:src="@drawable/circle_cut"/>-->
+			<!--			<ImageView-->
+			<!--				android:layout_width="125dp"-->
+			<!--				android:layout_height="125dp"-->
+			<!--				android:layout_centerInParent="true"-->
+			<!--				android:src="@drawable/circle_background_white"/>-->
+			<ImageView
+				android:layout_width="120dp"
+				android:layout_height="120dp"
+				android:layout_centerInParent="true"
+				app:srcCompat="@drawable/icon_services"/>
+
+		</RelativeLayout>
+
+		<TextView
+			android:layout_below="@+id/rlContentAnimation"
+			android:layout_centerHorizontal="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/white"
+			android:layout_marginTop="25dp"
+			android:text="Por favor espere un momento ..."/>
+	</RelativeLayout>
+
+</RelativeLayout>

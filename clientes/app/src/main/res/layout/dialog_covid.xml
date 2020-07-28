@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="1dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--Titulo-->
+                <RelativeLayout
+                    android:id="@+id/rlContentTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/aquamarineBackground">
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Medidas de Seguridad"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <!--Body-->
+                <ScrollView
+                    android:id="@+id/scrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_below="@+id/rlContentTitle">
+
+                    <LinearLayout
+                        android:id="@+id/llContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Por medidasde seguridad y prevención declaro bajo fe de juramento que ni yo y ninguna de las personas que solicitan los servicios de Aruba:"
+                            android:textColor="#333333"
+                            android:textSize="14dp" />
+
+                        <com.google.android.material.checkbox.MaterialCheckBox
+                            android:id="@+id/checkboxUno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="Tengo/tienen ningún síntoma relacionado al Covid-19 (Fiebre, dolor de cabeza, tos, estornudo, secreción nasal, fatiga, dolor de garganta, dificultad para respirar)."
+                            android:textColor="@color/black200"
+                            android:textSize="12dp" />
+
+                        <com.google.android.material.checkbox.MaterialCheckBox
+                            android:id="@+id/checkboxDos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Estuve/estuvieron en contacto con personas que volvieron de países del exterior durante el periodo de cuarenta."
+                            android:textColor="@color/black200"
+                            android:textSize="12dp" />
+
+                        <com.google.android.material.checkbox.MaterialCheckBox
+                            android:id="@+id/checkboxTres"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Estuve/estuvieron en contacto con personas de forma directa con personas que dieron positivas al Covid-19."
+                            android:textColor="@color/black200"
+                            android:textSize="12dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#33333330" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Protocolos de seguridad del MSPBS"
+                            android:textAlignment="center"
+                            android:textColor="#333333"
+                            android:textFontWeight="600"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tvLink"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="Entornos Laborales- ver más"
+                            android:textAlignment="center"
+                            android:textColor="@color/com_facebook_blue"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tvLink2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="Servicios a Domicilio - ver más"
+                            android:textColor="@color/com_facebook_blue"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center_horizontal"
+                            android:text="En caso de reclamos o sugerencias escribinos a hola@aruba.com.py"
+                            android:textAlignment="center"
+                            android:textColor="@color/black100"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <!--Continue button-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/scrollView"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="15dp">
+
+                    <Button
+                        android:id="@+id/btnAcept"
+                        style="@style/button_aqua"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:text="EMPEZAR A RESERVAR" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:elevation="5dp"
+            android:src="@drawable/icon_close_popup" />
+    </RelativeLayout>
+</RelativeLayout>

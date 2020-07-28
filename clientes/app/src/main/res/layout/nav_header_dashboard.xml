@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Imagen de Fondo-->
+        <RelativeLayout
+            android:id="@+id/rlContentHeader"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/aquamarineBackground">
+            <!--Datos del cliente-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvClient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¡Hola Usuario!"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <!--Dirección donde se solicita el servicio-->
+                <RelativeLayout
+                    android:id="@+id/rlContentAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvClient">
+
+                    <ImageView
+                        android:id="@+id/ivIconAddress"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:tint="#80FFFFFF"
+                        app:srcCompat="@drawable/icon_pin_map" />
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toEndOf="@+id/ivIconAddress"
+                        android:layout_toRightOf="@+id/ivIconAddress"
+                        android:gravity="center_vertical"
+                        android:text="CASA: Avda. Herrera 123 c/ Rca. Francesa"
+                        android:textColor="#FFFFFF"
+                        android:textSize="10dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!--Avatar-->
+            <RelativeLayout
+                android:id="@+id/rlContentAvatar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/ivAvatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/avatar" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

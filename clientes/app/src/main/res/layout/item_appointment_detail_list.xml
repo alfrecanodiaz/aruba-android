@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlItem"
+    android:layout_marginBottom="10dp"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="55dp"
+        android:background="@color/aquamarineBackground"/>
+
+    <!--Detail-->
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:padding="3dp"
+        android:background="#60EEEEEE"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <LinearLayout
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+            android:id="@+id/tvService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black200"
+            android:textSize="14dp"
+            android:text="Nombre del servicio solicitado" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_below="@+id/tvService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black100"
+                android:text="Duración apróx. 25min."
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivService"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/icon_services"
+            android:layout_marginLeft="5dp" />
+    </RelativeLayout>
+</RelativeLayout>

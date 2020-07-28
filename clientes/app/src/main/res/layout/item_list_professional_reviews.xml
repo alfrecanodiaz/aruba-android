@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/white"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<RelativeLayout
+		android:padding="15dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<RelativeLayout
+			android:id="@+id/rlComment"
+			android:layout_marginLeft="20dp"
+			android:layout_marginStart="20dp"
+			android:layout_marginTop="12dp"
+			android:background="#E0E0E0"
+			android:minHeight="50dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TextView
+				android:textSize="14dp"
+				android:id="@+id/tvClient"
+				android:layout_marginLeft="30dp"
+				android:textColor="@color/white"
+				android:textStyle="bold"
+				android:text="Pepe Gonzalez"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:id="@+id/tvComment"
+				android:layout_marginTop="5dp"
+				android:layout_marginLeft="30dp"
+				android:layout_below="@+id/tvClient"
+				android:textColor="#98FFFFFF"
+				android:text="Esto es un comentario escrito por el usuario"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_centerVertical="true"
+			android:layout_width="46dp"
+			android:layout_height="46dp">
+
+			<ImageView
+				android:id="@+id/ivAvatar"
+				android:src="@drawable/avatar"
+				android:layout_centerInParent="true"
+				android:layout_width="40dp"
+				android:layout_height="40dp"/>
+		</RelativeLayout>
+
+		<TextView
+			android:textSize="10dp"
+			android:id="@+id/tvDate"
+			android:textColor="@color/black100"
+			android:layout_below="@+id/rlComment"
+			android:text="21/08/17 14:00"
+			android:layout_marginEnd="8dp"
+			android:layout_alignParentEnd="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="8dp" />
+
+	</RelativeLayout>
+</RelativeLayout>

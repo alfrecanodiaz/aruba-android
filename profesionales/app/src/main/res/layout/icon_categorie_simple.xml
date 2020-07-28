@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="4dp"
+    android:layout_width="35dp"
+    android:layout_height="35dp">
+
+    <ImageView
+        android:id="@+id/ivCategorie"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+</RelativeLayout>

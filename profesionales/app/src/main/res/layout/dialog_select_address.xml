@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:layout_centerInParent="true"
+		android:layout_width="match_parent"
+		android:layout_margin="10dp"
+		android:layout_height="wrap_content" >
+		<androidx.cardview.widget.CardView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="15dp"
+			app:cardBackgroundColor="@color/white"
+			app:cardUseCompatPadding="true"
+			app:cardElevation="1dp"
+			app:cardCornerRadius="4dp">
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				<!--Titulo-->
+				<RelativeLayout
+					android:id="@+id/rlContentTitle"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:background="@color/aquamarine">
+					<TextView
+						android:id="@+id/tvTitle"
+						android:textSize="13dp"
+						android:text="AGREGAR DISPONIBILIDAD PARA EL MIERCOLES"
+						android:textColor="@color/white"
+						android:layout_centerInParent="true"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+				</RelativeLayout>
+
+				<!--Formulario-->
+				<LinearLayout
+                    android:layout_below="@+id/rlContentTitle"
+					android:layout_marginTop="30dp"
+					android:layout_marginLeft="30dp"
+					android:layout_marginRight="30dp"
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<LinearLayout
+						android:id="@+id/llFromHour"
+						android:orientation="horizontal"
+						android:focusable="true"
+						android:clickable="true"
+						android:padding="5dp"
+						android:layout_gravity="center_horizontal"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						<TextView
+							android:text="Desde las "
+							android:padding="5dp"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"/>
+						<TextView
+							android:id="@+id/tvFromHour"
+							android:text="10:00"
+							android:padding="5dp"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"/>
+					</LinearLayout>
+
+					<!--ToHour-->
+					<LinearLayout
+						android:id="@+id/llToHour"
+						android:orientation="horizontal"
+						android:gravity="center_horizontal"
+						android:focusable="true"
+						android:clickable="true"
+						android:padding="5dp"
+						android:layout_marginTop="10dp"
+						android:layout_gravity="center_horizontal"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						<TextView
+							android:text="Hasta las "
+							android:padding="5dp"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"/>
+						<TextView
+							android:id="@+id/tvToHour"
+							android:text="10:00"
+							android:padding="5dp"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"/>
+					</LinearLayout>
+
+					<Button
+						android:id="@+id/btnAcept"
+						android:text="Guardar"
+						android:layout_marginTop="25dp"
+						android:layout_marginBottom="15dp"
+						android:layout_gravity="center_horizontal"
+						android:layout_width="120dp"
+						android:layout_height="35dp"
+						style="@style/button_aqua"/>
+				</LinearLayout>
+			</RelativeLayout>
+		</androidx.cardview.widget.CardView>
+	</RelativeLayout>
+</RelativeLayout>

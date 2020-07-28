@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_profile"
+        android:checkableBehavior="single"
+        android:title="Perfil" />
+    <item
+        android:id="@+id/nav_services"
+        android:title="Reservas" />
+
+    <item
+        android:id="@+id/nav_professionals"
+        android:title="Profesionales" />
+    <item
+        android:id="@+id/nav_promotions"
+        android:title="Promociones" />
+    <item
+        android:id="@+id/nav_contact"
+        android:title="Contáctenos" />
+    <item
+        android:id="@+id/nav_about"
+        android:title="Acerca de" />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Cerrar Sesión" />
+</menu>

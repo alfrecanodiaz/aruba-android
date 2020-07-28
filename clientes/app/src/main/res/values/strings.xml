@@ -1,0 +1,141 @@
+<resources>
+	<string name="app_name">Aruba</string>
+	<string name="navigation_drawer_open">Abrir</string>
+	<string name="navigation_drawer_close">Cerrar</string>
+	<string name="facebook_app_id">866794133662810</string>
+	<string name="fb_login_protocol_scheme">fb866794133662810</string>
+	<string name="titlulo_pickers">Obtener fecha y hora</string>
+	<string name="formato_fecha">dd/mm/yyyy</string>
+	<string name="formato_hora">hh:mm</string>
+	<string name="location_permission">Necesitamos acceder al GPS para poder establecer tu ubicación. Si no quieres permitir el acceso o encender tu GPS, simplemente puedes arrastrar el mapa para esblacer tu ubicación.</string>
+	<string name="title_activity_mapa_test">Map</string>
+	<string name="back"><![CDATA[<]]></string>
+	<string name="foward"><![CDATA[>]]></string>
+
+
+	<string name="terminosUso"><![CDATA[
+			<p>
+                Somos una plataforma de intermediación entre profesionales independientes y clientes finales, que ofrece servicios de belleza a domicilio.
+            </p>
+            <p>
+                Nos movemos al ritmo del mundo de hoy, por eso adaptamos nuestro funcionamiento ofreciendo los atributos más valorados: tiempo y bienestar.
+                Para ello nos acercamos a vos en la comodidad de tu hogar, acorde a tus tiempos, mientras colaboramos con profesionales independientes quienes
+                te brindarán los mejores servicios de belleza.
+            </p>
+            <p>Nos motiva la excelencia, porque tiempo y bienestar no se garantizan sin calidad. Nos aseguramos de de obtener la máxima calidad seleccionando profesionales
+                bajo estrictos estándares, lo que nos otorga el respaldo de un plantel de colaboradores de altísimo nivel, orientado a proporcionar experiencias extraordinarias.
+            </p>
+        ]]></string>
+	<string name="politica"><![CDATA[
+			<p>
+            El presente Política de Privacidad establece los términos en que Aruba usa y protege la
+			información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta
+			compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos
+			llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos
+			asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo
+			esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le
+			recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de
+			acuerdo con dichos cambios.
+            </p>
+            <p>
+                Nos movemos al ritmo del mundo de hoy, por eso adaptamos nuestro funcionamiento ofreciendo los atributos más valorados: tiempo y bienestar.
+                Para ello nos acercamos a vos en la comodidad de tu hogar, acorde a tus tiempos, mientras colaboramos con profesionales independientes quienes
+                te brindarán los mejores servicios de belleza.
+            </p>
+            <p>Nos motiva la excelencia, porque tiempo y bienestar no se garantizan sin calidad. Nos aseguramos de de obtener la máxima calidad seleccionando profesionales
+                bajo estrictos estándares, lo que nos otorga el respaldo de un plantel de colaboradores de altísimo nivel, orientado a proporcionar experiencias extraordinarias.
+            </p>
+            ]]></string>
+
+	<string name="preguntas"><![CDATA[
+			<h3>1. ¿Qué servicios ofrece ARUBA?</h3>
+<p>Contamos con una variedad de servicios tanto para mujeres, hombres  y niños para poder consentir a todos, los servicios que actualmente estamos ofreciendo son:</p>
+<ul>
+<li>Peluquería</li>
+<li>Maquillaje</li>
+<li>Depilación</li>
+<li>Manicura/Pedicuro</li>
+<li>Tratamientos faciales y corporales </li>
+<li>Barbería </li>
+</ul>
+<p>Y también con servicios exclusivos para Novias, Quinceañeras, Baby Showers, y Empresas.  </p>
+
+<br>
+<h3>2. ¿Cuáles son los horarios de atención?</h3>
+<p>Los 365 días del año 24 horas. </p>
+<p>CITAS</p>
+
+<br>
+<h3>3. ¿Qué necesito en casa para recibir el servicio de ARUBA?</h3>
+<p>¡Nada! Los especialistas llevan los instrumentos necesarios para la realización efectiva de los diferentes servicios. Sin embargo, si quieres utilizar alguno propio, puedes hacerlo sin problema pero no se realizará ningún descuento. </p>
+<p>Si te pedimos que prevengas un lugar iluminado con conexión eléctrica cercana. </p>
+
+<br>
+<h3>4. ¿Todos los instrumentos utilizados por los especialistas, especialmente las manicuristas, están esterilizados?</h3>
+<p>Así es, contamos con estrictas reglas de seguridad e higiene para asegurarnos de que tengas un servicio higienizado de alta calidad.</p>
+
+<br>
+<h3>5. ¿Puedo elegir un especialista de ARUBA en específico?</h3>
+<p>Por supuesto, puedes solicitar al especialista de tu preferencia.</p>
+
+<br>
+<h3>6. ¿Es seguro recibir a un Especialista de ARUBA en mi domicilio?</h3>
+<p>Los profesionales pasan rigurosos procesos para selección y conformación del equipo de especialistas Aruba, como pruebas técnicas para certificar su profesionalismo y control de documentos legales como antecedentes policiales, vida y residencia vigentes  incluido el curriculum vitae con referencias. Al realizar este proceso con cada profesional, Aruba ya no se hace responsable de daños o hurtos a terceros que ocurran mientras se esté prestando el servicio Aruba en su domicilio.</p>
+
+<br>
+<h3>7. ¿Qué pasa si no hay especialistas disponibles para el día y la hora que necesito?</h3>
+<p>¡Agenda con tiempo! Si no hay especialistas disponibles para un día y una hora en específico necesariamente tendrás que buscar un horario diferente, por eso te recomendamos hacer tus reservas con tiempo así no tendrás inconvenientes.</p>
+
+<br>
+<h3>8. ¿Puedo solicitar un servicio de inmediato?</h3>
+<p>Puedes realizar tu reserva hasta tres horas antes. Todos los servicios de Aruba se pueden solicitar hasta tres horas antes de la hora deseada, pero no te garantizamos que siempre  haya especialistas disponibles. La demanda es mucha,  por lo que te pedimos que realices tus reservas anticipadamente así siempre encontrarás turnos disponibles.  </p>
+
+<br>
+<h3>9. ¿Puedo pedir al especialista que realice un servicio diferente al que he contratado?</h3>
+<p>Sí, pero el especialista deberá estar certificado para poder prestar dicho servicio. Además, si es un servicio de precio superior al contratado deberá abonarse en el acto la diferencia entre el servicio contratado y el servicio que se quiere recibir. Esta diferencia se hará sin tener en cuenta descuentos u otros beneficios.</p>
+
+<br>
+<h3>10. ¿Puedo añadir servicios en el momento de la cita o sumarse una persona más?</h3>
+<p>Sí, siempre y cuando el especialista tenga disponibilidad en su agenda puedes hacerlo. Nuestro especialista te indicará cómo debes hacerlo.</p>
+
+<br>
+<h3>11. Tengo una cita para peinar o cortar, ¿debo tener el pelo mojado?</h3>
+<p>Si tienes el pelo recién lavado no hace falta, pues nuestros especialistas pueden humedecerlo para poder trabajar con él. En cualquier caso, si quieres, puedes lavarte el pelo justo antes de tu cita y así todo estará preparado para tu peinado o corte de pelo. </p>
+
+
+<br><br>
+<h3>POLÍTICAS DE CANCELACIÓN Y CAMBIOS DE CITA</h3>
+<h3>12. ¿Qué sucede si cancelo mi reserva o servicio?</h3>
+<p>Si cancelas con tres horas de anticipación se te reembolsará el 100% (en caso de que ya hayas pagado con tarjeta) del pago a tu tarjeta que se verá reflejado en un lapso de 7-21 días hábiles dependiendo del banco, sin embargo si cancelas con menos de tres horas se te cobrará el 30% del servicio a ser prestado en concepto de tarifa de cancelación.  </p>
+
+<br>
+<h3>13. ¿Qué pasa si el especialista Aruba cancela mi reserva?</h3>
+<p>Si el Especialista cancela antes de que comience el servicio la solicitud será enviada al siguiente Especialista disponible. </p>
+
+<h3>14. ¿Y si el especialista Aruba no llega?</h3>
+<p>Relajate que otro profesional llegará en su reemplazo. </p>
+<p>Si ya no podes re agendar tu cita para otro horario o fecha, puede llamar al número habilitado para quejas y reclamos que otro profesional irá a cumplir con el servicio solicitado. Una vez pasados 15 minutos de la hora establecida y el profesional aún no ha llegado puedes optar por cancelar la reserva sin cargo de tarifa de cancelación. </p>
+
+<br>
+<h3>15. ¿Qué sucede si quiero modificar la hora o el lugar de mi cita? </h3>
+<p>Tendrás que hacerlo con tres horas de antelación a tu cita, necesariamente tendrás que cancelar el servicio solicitado y volver a agendar con la hora y el lugar deseado. </p>
+
+<br><br>
+<h3>TOLERANCIA</h3>
+<p>El especialista de ARUBA te podrá esperar hasta 15 minutos para comenzar su cita y al comenzar tu cita te pedimos no lo detengas más de 15 minutos. Es importante respetar los tiempos ya que nuestro especialista posiblemente tenga otras citas que atender después de la tuya.</p>
+
+<br><br>
+<h3>PAGOS</h3>
+<h3>16.  ¿Puedo pagar en efectivo?</h3>
+<p>Si, puede pagar en efectivo. Sin embargo, para garantizar un proceso eficiente y seguro, también hacemos uso del sistema de pago electrónico automático o transferencia bancaria.</p>
+
+
+<h3>17. Si mi pago con tarjeta no pasa ¿Qué debo hacer?</h3>
+<p>Tenemos también la opción de pagar en efectivo directamente a nuestro especialista o transferencia bancaria. Pero, además,  podrías también probar con otra tarjeta de crédito. Si sigues teniendo problemas comunícate con nosotros y te ayudaremos.</p>
+
+<br><br>
+<h3>PROBLEMAS TECNOLÓGICOS</h3>
+<h3>18. ¿Qué hago si mi app no está funcionando? </h3>
+<p>Sal de tu sesión, desinstala la app y vuélvela a instalar. De esa manera te aseguras tener la última versión.</p>
+            ]]></string>
+</resources>

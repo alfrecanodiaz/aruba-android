@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable name="title" type="java.lang.String"/>
+        <variable name="icon" type="android.graphics.drawable.Drawable"/>
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/app_bar_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="false"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--icon-->
+                    <RelativeLayout
+                        android:id="@+id/rlBackButton"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="15dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/back_button" />
+                    </RelativeLayout>
+                    <ImageView
+                        android:id="@+id/ivLogoToolbar"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/logo_superior" />
+                </RelativeLayout>
+            </FrameLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/app_bar"
+            android:background="@color/aquamarineBackground"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <!--icon-->
+            <RelativeLayout
+                android:id="@+id/rlIcon"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="15dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="15dp">
+                <ImageView
+                    android:transitionName="icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@{icon}" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_toEndOf="@+id/rlIcon"
+                android:text="@{title}"
+                android:transitionName="title"
+                android:layout_marginLeft="15dp"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/rlIcon"
+                android:layout_marginStart="15dp" />
+        </RelativeLayout>
+
+        <!--profile-->
+        <RelativeLayout
+            android:layout_marginRight="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="15dp">
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:transitionName="profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/avatar" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

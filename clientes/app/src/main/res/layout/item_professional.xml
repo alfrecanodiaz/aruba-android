@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rlBackgroundSelected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="2dp"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+        <!--Contenido-->
+        <RelativeLayout
+            android:id="@+id/rlButtonTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_green_border">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--Avatar y nombre-->
+                <RelativeLayout
+                    android:id="@+id/rlContentInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingHorizontal="5dp">
+
+                    <ImageView
+                        android:id="@+id/ivAvatar"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/avatar" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@id/ivAvatar"
+                        android:layout_toRightOf="@id/ivAvatar">
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:transitionName="tvName" />
+
+                        <androidx.appcompat.widget.AppCompatRatingBar
+                            android:id="@+id/ratingBar"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvName"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:progressBackgroundTint="@color/brown2"
+                            android:progressTint="@color/yellow"
+                            android:rating="5"
+                            android:secondaryProgressTint="@color/yellow"
+                            android:stepSize="1.0" />
+
+                        <TextView
+                            android:id="@+id/tvRatingCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvName"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toEndOf="@+id/ratingBar"
+                            android:layout_toRightOf="@+id/ratingBar"
+                            android:textColor="@color/blackInfo"
+                            android:textSize="10dp"
+                            android:transitionName="tvName" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <!--Horario-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewHours"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rlContentInfo"
+                    android:layout_marginBottom="3dp" />
+
+                <TextView
+                    android:id="@+id/tvNoAvailability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlContentInfo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="Sin horarios disponibles"
+                    android:textColor="@color/green1"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+

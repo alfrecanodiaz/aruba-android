@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.professionals.ProfessionalFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--View para sin contenido-->
+    <LinearLayout
+        android:id="@+id/viewEmpty"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            app:srcCompat="@drawable/icon_services"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <TextView
+            android:text="Muy pronto habrá mas profesionales. Quedate atento a las novedades"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/blackInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

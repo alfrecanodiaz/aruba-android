@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Nuevos colores del diseño v2-->
+    <color name="green1">#3EA597</color>
+    <color name="green2">#79DDCD</color>
+    <color name="green3">#79DDCD</color>
+    <color name="green4">#ECFDF9</color>
+
+    <color name="headerAppointment">#EDFDFA</color>
+    <color name="headerAppointmentTitle">#008F7A</color>
+
+
+
+
+    <!--fin nuevos colores-->
+<!--    <color name="colorPrimary">#ECFDF9</color>-->
+<!--    <color name="colorPrimaryDark">#3EA597</color>-->
+<!--    <color name="colorAccent">#79DDCD</color>-->
+
+    <color name="colorPrimary">#484848</color>
+    <color name="colorPrimaryDark">#3A3739</color>
+    <color name="colorAccent">#78DDCD</color>
+
+    <!--Colores de la Empresa-->
+    <color name="darkBrown">#D3BEAC</color>
+    <color name="lightBrown">#E4E4E4</color>
+
+    <!--Botones-->
+<!--    <color name="aquamarine">#44E8CD</color>-->
+    <color name="aquamarineDark">#74aea8</color>
+    <color name="aquamarineBackground">#78DDCD</color>
+    <color name="brown1">#C9AE97</color>
+    <color name="brown2">#A6A6A6</color>
+    <color name="lineBlack">#E8E8E8</color>
+
+<!--    <color name="appointment">#74aea8</color>-->
+
+    <!--varios-->
+    <color name="white">#FFFFFF</color>
+    <color name="whiteSoft">#70555555</color>
+    <color name="activityBackground">#EEEEEE</color>
+
+    <!--DTP-->
+    <color name="mdtp_accent_color">#009688</color>
+    <color name="mdtp_accent_color_dark">#00796b</color>
+
+    <!--Variantes transparencia-->
+    <color name="blackTransparent60">#60000000</color>
+    <color name="blackTransparent80">#80000000</color>
+    <color name="gray200">#EEEEEE</color>
+    <color name="gray300">#E0E0E0</color>
+    <color name="black100">#999999</color>
+    <color name="black200">#666666</color>
+    <color name="transparent">#00000000</color>
+	<color name="yellow">#FACA68</color>
+	<color name="blackInfo">#60666666</color>
+
+
+    <!--Aruba v2-->
+    <color name="titlePrincipal">#3b4f62</color>
+</resources>

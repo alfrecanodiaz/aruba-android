@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--peluqueria-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlContent"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <!--Texto del boton-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_toLeftOf="@+id/swEnabled"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_toStartOf="@+id/swEnabled"
+        android:layout_marginStart="100dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="#777777"
+            android:textSize="16dp"
+            android:transitionName="title" />
+
+        <TextView
+            android:text="Ver detalles de los servicios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whiteSoft"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/swEnabled"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" />
+
+    <!--Icono-->
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/icon_availability"
+        android:transitionName="icon" />
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineBlack" />
+</RelativeLayout>
+
+

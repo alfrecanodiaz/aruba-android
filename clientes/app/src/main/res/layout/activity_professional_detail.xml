@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	tools:context=".ui.professionals.ProfessionalDetailActivity">
+
+	<include layout="@layout/appbar_merge" />
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/app_bar_content">
+		<RelativeLayout
+			android:background="@color/aquamarineBackground"
+			android:layout_width="match_parent"
+			android:layout_height="100dp">
+			<TextView
+				android:id="@+id/tvProfessionalName"
+				android:transitionName="tvProfessionalName"
+				android:textSize="14dp"
+				android:textColor="@color/white"
+				android:layout_centerHorizontal="true"
+				android:layout_margin="8dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		</RelativeLayout>
+
+		<ImageView
+			android:id="@+id/ivAvatar"
+			android:transitionName="ivAvatar"
+			android:layout_width="100dp"
+			android:layout_marginTop="50dp"
+			android:layout_height="100dp"
+			android:src="@drawable/avatar"
+			android:layout_centerHorizontal="true"/>
+
+		<LinearLayout
+			android:id="@+id/llContentDetails"
+			android:layout_below="@id/ivAvatar"
+			android:transitionName="llContentDetails"
+			android:layout_marginTop="20dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:weightSum="4">
+
+			<!--Columna-->
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:text="LIKES"
+					android:textColor="@color/black100"
+					android:textSize="8dp" />
+				<ImageView
+					android:id="@+id/ivLike"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="5dp"
+					android:layout_marginBottom="5dp"
+					app:srcCompat="@drawable/like" />
+
+				<TextView
+					android:id="@+id/tvLikes"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:text="125"
+					android:textColor="@color/black100" />
+			</LinearLayout>
+
+			<!--Columna-->
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+				<TextView
+					android:text="SERVICIOS"
+					android:textSize="8dp"
+					android:layout_gravity="center_horizontal"
+					android:textColor="@color/black100"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+				<ImageView
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="5dp"
+					android:layout_marginBottom="5dp"
+					app:srcCompat="@drawable/icon_services" />
+
+				<TextView
+					android:id="@+id/tvServices"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:text="125"
+					android:textColor="@color/black100" />
+			</LinearLayout>
+
+			<!--Columna-->
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+				<TextView
+					android:text="COMENTARIOS"
+					android:textSize="8dp"
+					android:layout_gravity="center_horizontal"
+					android:textColor="@color/black100"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+				<ImageView
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="5dp"
+					android:layout_marginBottom="5dp"
+					app:srcCompat="@drawable/icon_comment" />
+
+				<TextView
+					android:id="@+id/tvComments"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:text="125"
+					android:textColor="@color/black100" />
+			</LinearLayout>
+
+			<!--Columna-->
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+				<TextView
+					android:text="PROMEDIO"
+					android:textSize="8dp"
+					android:layout_gravity="center_horizontal"
+					android:textColor="@color/black100"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+				<ImageView
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="5dp"
+					android:layout_marginBottom="5dp"
+					app:srcCompat="@drawable/icon_start_on" />
+
+				<TextView
+					android:id="@+id/tvAverage"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:text="125"
+					android:textColor="@color/black100" />
+			</LinearLayout>
+
+
+		</LinearLayout>
+
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/recyclerView"
+			android:layout_below="@+id/llContentDetails"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+	</RelativeLayout>
+
+</RelativeLayout>

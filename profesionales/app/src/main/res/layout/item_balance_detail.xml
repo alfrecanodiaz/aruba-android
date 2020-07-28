@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?><!--peluqueria-->
+<!--fila-->
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/rlItem"
+	android:orientation="vertical">
+
+
+	<RelativeLayout
+        android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:layout_width="match_parent"
+		android:layout_height="60dp">
+		<!--Contenido-->
+		<RelativeLayout
+            android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp">
+			<!--Perfil-->
+			<ImageView
+				android:id="@+id/ivAvatar"
+				android:layout_width="45dp"
+				android:layout_height="45dp"
+				android:layout_centerVertical="true"
+				android:src="@drawable/avatar" />
+
+			<!--Nombre-->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="15dp"
+				android:layout_toEndOf="@+id/ivAvatar"
+				android:layout_toStartOf="@+id/llContentDate"
+				android:orientation="vertical"
+				android:layout_centerInParent="true">
+				<TextView
+					android:id="@+id/tvName"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/black200"
+					android:text="Diana Gonzalez"
+					android:textSize="13dp" />
+
+				<TextView
+					android:id="@+id/tvDetail"
+					android:textColor="@color/black100"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="11dp" />
+			</LinearLayout>
+
+			<!--Botones laterales-->
+			<LinearLayout
+				android:id="@+id/llContentDate"
+				android:layout_width="50dp"
+				android:background="@color/brown1"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:layout_alignParentEnd="true"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/tvDay"
+					android:textStyle="bold"
+					android:textColor="@color/white"
+					android:layout_gravity="center_horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="29"/>
+
+				<TextView
+					android:id="@+id/tvMonth"
+					android:textColor="@color/white"
+					android:textStyle="bold"
+					android:layout_gravity="center_horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="FEB"/>
+
+			</LinearLayout>
+		</RelativeLayout>
+
+<!--		<View-->
+<!--			android:layout_width="match_parent"-->
+<!--			android:layout_height="1dp"-->
+<!--			android:layout_alignParentBottom="true"-->
+<!--			android:layout_marginLeft="10dp"-->
+<!--			android:layout_marginRight="10dp"-->
+<!--			android:background="#20000000" />-->
+	</RelativeLayout>
+</RelativeLayout>
+
